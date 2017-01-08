@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
-<script>
-function browserRedirect() {
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Welcome to gaoruixian's blog!</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<div style="text-align:center;clear:both;position:absolute;top:10px;left:260px;z-index:999">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+  <div id="canvasContainer"></div>
+  
+<span id="textInputSpan">
+<!--  Your name (max 10 chars) : -->
+<!--  <input id="textInput" maxlength="10" type="text" width="150" /> -->
+<!--  <button onclick="changeText()">GO!</button> -->
+</span>
+
+  <script src="js/index.js"></script>
+  <script>
+    function browserRedirect() {
     var sUserAgent = navigator.userAgent.toLowerCase();
     var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
     var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
@@ -12,13 +37,16 @@ function browserRedirect() {
     var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
     if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
-        window.location.href="http://blog.csdn.net/usain_bolt";
+        window.location.href="http://blog.csdn.net/lmj623565791";
     } else {
-        window.location.href="http://m.blog.csdn.net/blog/index?username=usain_bolt";
+        window.location.href="http://m.blog.csdn.net/blog/index?username=lmj623565791";
+     }
     }
-}
-browserRedirect();
-</script>
-<body>
+    browserRedirect();	
+
+  </script>
+
+
 </body>
+
 </html>
